@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image,Button } from "react-native";
+import { StyleSheet, Text, View, Image,Button, TextInput } from "react-native";
 import StateWithClassComponent from './StateWithClassComponent';
 import StateWithFuctionalComponent from './StateWithFuctionalComponent';
 import UseEffectWithClassComponent from './UseEffectWithClassComponent'
@@ -17,7 +17,7 @@ export default function App() {
       {/* <UseEffectWithFunctionalComponent />
       <Button title="toggle" onPress={()=>setIsTrue(!isTrue)}/> 
        */}
-       
+      <CustomHook />
     </View>
   );
 }
